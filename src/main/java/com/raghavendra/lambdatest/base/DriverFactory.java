@@ -9,33 +9,44 @@ import java.net.URL;
 
 public class DriverFactory {
 
-    private static ThreadLocal<AppiumDriver> driver = new ThreadLocal<>();
+    private static final ThreadLocal<AppiumDriver> driver = new ThreadLocal<>();
 
     public static void initDriver() {
 
-        // 🔴 TEMP: hardcoded creds for development ONLY
-        String username = "lt_test";
-        String accessKey = "LT_MJlsT9lwKlSm4goMrrEWPfeEpGMsBKpradF1mto704q1Hlf";
+        // Fetch from system environment
+        String username = System.getenv("LT_USERNAME");
+        String accessKey = System.getenv("LT_ACCESS_KEY");
+        String appId = System.getenv("LT_APP_ID");
+        String platformName = System.getenv("LT_PLATFORM");
+        String deviceName = System.getenv("LT_DEVICE");
+        String platformVersion = System.getenv("LT_PLATFORM_VERSION");
 
+        // Validate required fields
+        if (username == null || accessKey == null || appId == null) {
+            throw new RuntimeException("❌ Required env vars missing. Please set: LT_USERNAME, LT_ACCESS_KEY, LT_APP_ID");
+        }
+
+        // LambdaTest Hub URL
         String hubUrl = "https://" + username + ":" + accessKey + "@mobile-hub.lambdatest.com/wd/hub";
 
         MutableCapabilities caps = new MutableCapabilities();
-        caps.setCapability("platformName", "Android");	
-        caps.setCapability("deviceName", "Galaxy S11");
-        caps.setCapability("platformVersion", "12");
+        caps.setCapability("platformName", platformName != null ? platformName : "Android");
+        caps.setCapability("deviceName", deviceName != null ? deviceName : "Galaxy S21");
+        caps.setCapability("platformVersion", platformVersion != null ? platformVersion : "12");
         caps.setCapability("isRealMobile", true);
+        caps.setCapability("app", appId);
 
-        // Use app public URL (from email)
-        caps.setCapability("app", "lt://APP1016060671764797351937344");
-
+        // Tags (professional touch)
         caps.setCapability("build", "LambdaTest Mobile Assignment");
-        caps.setCapability("name", "SpeedTest Connection Test");
+        caps.setCapability("name", "SpeedTest Automation");
+        caps.setCapability("project", "Mobile Speed Test Suite");
 
         try {
             AndroidDriver androidDriver = new AndroidDriver(new URL(hubUrl), caps);
             driver.set(androidDriver);
+            System.out.println("🚀 Driver initialized successfully with LambdaTest cloud device.");
         } catch (MalformedURLException e) {
-            throw new RuntimeException("Invalid LambdaTest hub URL", e);
+            throw new RuntimeException("❌ Invalid LambdaTest hub URL", e);
         }
     }
 
@@ -47,6 +58,7 @@ public class DriverFactory {
         if (driver.get() != null) {
             driver.get().quit();
             driver.remove();
+            System.out.println("🧹 Driver session cleaned up.");
         }
     }
 }
