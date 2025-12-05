@@ -1,2 +1,5 @@
-com\raghavendra\lambdatest\tests\BaseTest.class
-com\raghavendra\lambdatest\tests\ConnectionTest.class
+tests\UploadTest.class
+tests\LatencyTest.class
+tests\CombinedTest.class
+tests\ConnectionTest.class
+tests\DownloadTest.class

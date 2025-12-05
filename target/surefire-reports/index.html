@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-LambdaTest_Mobile_Suite" class="navigator-link">
-              <span class="suite-name border-skipped">LambdaTest Mobile Suite</span>
+            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
+              <span class="suite-name border-failed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-LambdaTest_Mobile_Suite" class="navigator-link ">
-                    <span>C:\Users\Raghavendra IL\eclipse-workspace\lambdatest-mobile-speedtest-automation\testng.xml</span>
+                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-LambdaTest_Mobile_Suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-LambdaTest_Mobile_Suite" class="navigator-link ">
+                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-LambdaTest_Mobile_Suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-LambdaTest_Mobile_Suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-LambdaTest_Mobile_Suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-LambdaTest_Mobile_Suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,21 +92,50 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,  1 skipped,  </span>
+                    <span class="method-stats">5 methods, 4 failed,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-LambdaTest_Mobile_Suite" class="hide-methods skipped suite-LambdaTest_Mobile_Suite"> (hide)</a> <!-- hide-methods skipped suite-LambdaTest_Mobile_Suite -->
-                      <a href="#" panel-name="suite-LambdaTest_Mobile_Suite" class="show-methods skipped suite-LambdaTest_Mobile_Suite"> (show)</a> <!-- show-methods skipped suite-LambdaTest_Mobile_Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
                     </span>
-                    <div class="method-list-content skipped suite-LambdaTest_Mobile_Suite">
+                    <div class="method-list-content failed suite-Surefire_suite">
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-LambdaTest_Mobile_Suite" title="com.raghavendra.lambdatest.tests.ConnectionTest" class="method navigator-link" hash-for-method="verifyAppLaunchesOnLambdaTest">verifyAppLaunchesOnLambdaTest</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.CombinedTest" class="method navigator-link" hash-for-method="combinedSpeedTest">combinedSpeedTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-LambdaTest_Mobile_Suite -->
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.DownloadTest" class="method navigator-link" hash-for-method="downloadSpeedTest">downloadSpeedTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.LatencyTest" class="method navigator-link" hash-for-method="latencyCheck">latencyCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.UploadTest" class="method navigator-link" hash-for-method="uploadSpeedTest">uploadSpeedTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.ConnectionTest" class="method navigator-link" hash-for-method="testConnection">testConnection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,139 +146,321 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-LambdaTest_Mobile_Suite" class="panel LambdaTest_Mobile_Suite">
-          <div class="suite-LambdaTest_Mobile_Suite-class-skipped">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.raghavendra.lambdatest.tests.ConnectionTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">tests.UploadTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyAppLaunchesOnLambdaTest">
-                  </a> <!-- verifyAppLaunchesOnLambdaTest -->
-                  <span class="method-name">verifyAppLaunchesOnLambdaTest</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: ba74bbcdf1a2a294c59320fa65f3a66f: Oops! We are unable to process your test at the moment. Please try again after sometime. 
-Host info: host: &apos;RAGHAVENDRAIL&apos;, ip: &apos;192.168.0.11&apos;
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+                  <a name="uploadSpeedTest">
+                  </a> <!-- uploadSpeedTest -->
+                  <span class="method-name">uploadSpeedTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {desiredCapabilities=Capabilities {app: lt://APP1016060671764797351..., build: LambdaTest Mobile Assignment, deviceName: Galaxy S11, isRealMobile: true, name: SpeedTest Connection Test, platformName: ANDROID, platformVersion: 12}, capabilities=[{appium:name=SpeedTest Connection Test, appium:isRealMobile=true, appium:platformVersion=12, appium:app=lt://APP1016060671764797351937344, appium:deviceName=Galaxy S11, platformName=ANDROID, appium:build=LambdaTest Mobile Assignment}]}]
-Capabilities {app: lt://APP1016060671764797351..., build: LambdaTest Mobile Assignment, deviceName: Galaxy S11, isRealMobile: true, name: SpeedTest Connection Test, platformName: ANDROID, platformVersion: 12}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+Command: [2fd5bea9-0e2c-46e9-8c60-1fb0750371ad, findElement {using=id, value=com.lambdatest.proverbial:id/browser}]
+Capabilities {appium:adbExecTimeout: 120000, appium:appActivity: com.example.QAapp.SplashScr..., appium:appPackage: com.example.QAapp, appium:autoAcceptAlerts: true, appium:automationName: uiautomator2, appium:chromeOptions: {args: []}, appium:chromedriverExecutableDir: /appium/assets/drivers/chro..., appium:chromedriverPorts: [[11001, 11049]], appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 120000, appActivity: com.example.QAapp.SplashScr..., appPackage: com.example.QAapp, autoAcceptAlerts: true, automationName: uiautomator2, chromeOptions: {args: []}, chromedriverExecutableDir: /appium/assets/drivers/chro..., chromedriverPorts: [[11001, 11049]], deviceName: Pixel 7, enableWebviewDetailsCollection: false, ensureWebviewsHavePages: false, headless: false, mode: cloud, nativeWebScreenshot: true, newCommandTimeout: 0, orientation: PORTRAIT, platformName: android, platformVersion: 13, systemPort: 12151, udid: 35091FDH2002GS, uiautomator2ServerLaunchTimeout: 60000, waitForQuiescence: false}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 7, appium:deviceName: 35091FDH2002GS, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 35091FDH2002GS, appium:enableWebviewDetailsCollection: false, appium:ensureWebviewsHavePages: false, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 0, appium:orientation: PORTRAIT, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 136, appium:systemPort: 12151, appium:takesScreenshot: true, appium:udid: 35091FDH2002GS, appium:uiautomator2ServerLaunchTimeout: 60000, appium:viewportRect: {height: 2002, left: 0, top: 136, width: 1080}, appium:waitForQuiescence: false, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 2fd5bea9-0e2c-46e9-8c60-1fb0750371ad
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
-	at com.raghavendra.lambdatest.base.DriverFactory.initDriver(DriverFactory.java:35)
-	at com.raghavendra.lambdatest.tests.BaseTest.setUp(BaseTest.java:12)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at pages.SpeedTestPage.openBrowser(SpeedTestPage.java:27)
+	at tests.UploadTest.uploadSpeedTest(UploadTest.java:16)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 35 stack frames
+... Removed 33 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-LambdaTest_Mobile_Suite-class-skipped -->
-        </div> <!-- panel LambdaTest_Mobile_Suite -->
-        <div panel-name="test-xml-LambdaTest_Mobile_Suite" class="panel">
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.DownloadTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="downloadSpeedTest">
+                  </a> <!-- downloadSpeedTest -->
+                  <span class="method-name">downloadSpeedTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [d61ec12f-4844-4042-b95a-3670fe273c0f, findElement {using=id, value=com.lambdatest.proverbial:id/browser}]
+Capabilities {appium:adbExecTimeout: 120000, appium:appActivity: com.example.QAapp.SplashScr..., appium:appPackage: com.example.QAapp, appium:autoAcceptAlerts: true, appium:automationName: uiautomator2, appium:chromeOptions: {args: []}, appium:chromedriverExecutableDir: /appium/assets/drivers/chro..., appium:chromedriverPorts: [[11001, 11049]], appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 120000, appActivity: com.example.QAapp.SplashScr..., appPackage: com.example.QAapp, autoAcceptAlerts: true, automationName: uiautomator2, chromeOptions: {args: []}, chromedriverExecutableDir: /appium/assets/drivers/chro..., chromedriverPorts: [[11001, 11049]], deviceName: Pixel 7, enableWebviewDetailsCollection: false, ensureWebviewsHavePages: false, headless: false, mode: cloud, nativeWebScreenshot: true, newCommandTimeout: 0, orientation: PORTRAIT, platformName: android, platformVersion: 13, systemPort: 12391, udid: 35091FDH2007FA, uiautomator2ServerLaunchTimeout: 60000, waitForQuiescence: false}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 7, appium:deviceName: 35091FDH2007FA, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 35091FDH2007FA, appium:enableWebviewDetailsCollection: false, appium:ensureWebviewsHavePages: false, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 0, appium:orientation: PORTRAIT, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 136, appium:systemPort: 12391, appium:takesScreenshot: true, appium:udid: 35091FDH2007FA, appium:uiautomator2ServerLaunchTimeout: 60000, appium:viewportRect: {height: 2002, left: 0, top: 136, width: 1080}, appium:waitForQuiescence: false, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: d61ec12f-4844-4042-b95a-3670fe273c0f
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at pages.SpeedTestPage.openBrowser(SpeedTestPage.java:27)
+	at tests.DownloadTest.downloadSpeedTest(DownloadTest.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.LatencyTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="latencyCheck">
+                  </a> <!-- latencyCheck -->
+                  <span class="method-name">latencyCheck</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [e3602eb3-7881-4d81-b890-130aeb37ead4, findElement {using=id, value=com.lambdatest.proverbial:id/browser}]
+Capabilities {appium:adbExecTimeout: 120000, appium:appActivity: com.example.QAapp.SplashScr..., appium:appPackage: com.example.QAapp, appium:autoAcceptAlerts: true, appium:automationName: uiautomator2, appium:chromeOptions: {args: []}, appium:chromedriverExecutableDir: /appium/assets/drivers/chro..., appium:chromedriverPorts: [[11001, 11049]], appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 120000, appActivity: com.example.QAapp.SplashScr..., appPackage: com.example.QAapp, autoAcceptAlerts: true, automationName: uiautomator2, chromeOptions: {args: []}, chromedriverExecutableDir: /appium/assets/drivers/chro..., chromedriverPorts: [[11001, 11049]], deviceName: Pixel 7, enableWebviewDetailsCollection: false, ensureWebviewsHavePages: false, headless: false, mode: cloud, nativeWebScreenshot: true, newCommandTimeout: 0, orientation: PORTRAIT, platformName: android, platformVersion: 13, systemPort: 12106, udid: 29201FDH2002EF, uiautomator2ServerLaunchTimeout: 60000, waitForQuiescence: false}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 7, appium:deviceName: 29201FDH2002EF, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 29201FDH2002EF, appium:enableWebviewDetailsCollection: false, appium:ensureWebviewsHavePages: false, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 0, appium:orientation: PORTRAIT, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 136, appium:systemPort: 12106, appium:takesScreenshot: true, appium:udid: 29201FDH2002EF, appium:uiautomator2ServerLaunchTimeout: 60000, appium:viewportRect: {height: 2002, left: 0, top: 136, width: 1080}, appium:waitForQuiescence: false, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e3602eb3-7881-4d81-b890-130aeb37ead4
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at pages.SpeedTestPage.openBrowser(SpeedTestPage.java:27)
+	at tests.LatencyTest.latencyCheck(LatencyTest.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.CombinedTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="combinedSpeedTest">
+                  </a> <!-- combinedSpeedTest -->
+                  <span class="method-name">combinedSpeedTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [8d73e0a1-8b64-408a-9db3-345c5cfee26d, findElement {using=id, value=com.lambdatest.proverbial:id/browser}]
+Capabilities {appium:adbExecTimeout: 120000, appium:appActivity: com.example.QAapp.SplashScr..., appium:appPackage: com.example.QAapp, appium:autoAcceptAlerts: true, appium:automationName: uiautomator2, appium:chromeOptions: {args: []}, appium:chromedriverExecutableDir: /appium/assets/drivers/chro..., appium:chromedriverPorts: [[11001, 11049]], appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 120000, appActivity: com.example.QAapp.SplashScr..., appPackage: com.example.QAapp, autoAcceptAlerts: true, automationName: uiautomator2, chromeOptions: {args: []}, chromedriverExecutableDir: /appium/assets/drivers/chro..., chromedriverPorts: [[11001, 11049]], deviceName: Pixel 7, enableWebviewDetailsCollection: false, ensureWebviewsHavePages: false, headless: false, mode: cloud, nativeWebScreenshot: true, newCommandTimeout: 0, orientation: PORTRAIT, platformName: android, platformVersion: 13, systemPort: 12109, udid: 2A101FDH200FGD, uiautomator2ServerLaunchTimeout: 60000, waitForQuiescence: false}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 7, appium:deviceName: 2A101FDH200FGD, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 2A101FDH200FGD, appium:enableWebviewDetailsCollection: false, appium:ensureWebviewsHavePages: false, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 0, appium:orientation: PORTRAIT, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 136, appium:systemPort: 12109, appium:takesScreenshot: true, appium:udid: 2A101FDH200FGD, appium:uiautomator2ServerLaunchTimeout: 60000, appium:viewportRect: {height: 2002, left: 0, top: 136, width: 1080}, appium:waitForQuiescence: false, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 8d73e0a1-8b64-408a-9db3-345c5cfee26d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at pages.SpeedTestPage.openBrowser(SpeedTestPage.java:27)
+	at tests.CombinedTest.combinedSpeedTest(CombinedTest.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.ConnectionTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testConnection">
+                  </a> <!-- testConnection -->
+                  <span class="method-name">testConnection</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Raghavendra IL\eclipse-workspace\lambdatest-mobile-speedtest-automation\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;LambdaTest Mobile Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Connection Test&quot; verbose=&quot;0&quot;&gt;
+&lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.raghavendra.lambdatest.tests.ConnectionTest&quot;/&gt;
+      &lt;class name=&quot;tests.CombinedTest&quot;/&gt;
+      &lt;class name=&quot;tests.ConnectionTest&quot;/&gt;
+      &lt;class name=&quot;tests.DownloadTest&quot;/&gt;
+      &lt;class name=&quot;tests.LatencyTest&quot;/&gt;
+      &lt;class name=&quot;tests.UploadTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Connection Test --&gt;
-&lt;/suite&gt; &lt;!-- LambdaTest Mobile Suite --&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-LambdaTest_Mobile_Suite" class="panel">
+        <div panel-name="testlist-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for LambdaTest Mobile Suite</span>
+            <span class="header-content">Tests for Surefire suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Connection Test (1 class)</span>
+                <span class="test-name">Surefire test (5 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-LambdaTest_Mobile_Suite" class="panel">
+        <div panel-name="group-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for LambdaTest Mobile Suite</span>
+            <span class="header-content">Groups for Surefire suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-LambdaTest_Mobile_Suite" class="panel">
+        <div panel-name="times-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for LambdaTest Mobile Suite</span>
+            <span class="header-content">Times for Surefire suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_LambdaTest_Mobile_Suite');
-function tableData_LambdaTest_Mobile_Suite() {
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyAppLaunchesOnLambdaTest')
-data.setCell(0, 2, 'com.raghavendra.lambdatest.tests.ConnectionTest')
-data.setCell(0, 3, 0);
-window.suiteTableData['LambdaTest_Mobile_Suite']= { tableData: data, tableDiv: 'times-div-LambdaTest_Mobile_Suite'}
+data.setCell(0, 1, 'testConnection')
+data.setCell(0, 2, 'tests.ConnectionTest')
+data.setCell(0, 3, 28172);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'combinedSpeedTest')
+data.setCell(1, 2, 'tests.CombinedTest')
+data.setCell(1, 3, 25167);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'latencyCheck')
+data.setCell(2, 2, 'tests.LatencyTest')
+data.setCell(2, 3, 23934);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'downloadSpeedTest')
+data.setCell(3, 2, 'tests.DownloadTest')
+data.setCell(3, 3, 23461);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'uploadSpeedTest')
+data.setCell(4, 2, 'tests.UploadTest')
+data.setCell(4, 3, 22624);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
-              <div id="times-div-LambdaTest_Mobile_Suite">
-              </div> <!-- times-div-LambdaTest_Mobile_Suite -->
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-LambdaTest_Mobile_Suite" class="panel">
+        <div panel-name="reporter-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for LambdaTest Mobile Suite</span>
+            <span class="header-content">Reporter output for Surefire suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-LambdaTest_Mobile_Suite" class="panel">
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-LambdaTest_Mobile_Suite" class="panel">
+        <div panel-name="chronological-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.raghavendra.lambdatest.tests.ConnectionTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
+              <div class="chronological-class-name">tests.CombinedTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">setUp</span>
+                <span class="method-name">combinedSpeedTest</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ConnectionTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testConnection</span>
+                <span class="method-start">25167 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DownloadTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">downloadSpeedTest</span>
+                <span class="method-start">53340 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LatencyTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">latencyCheck</span>
+                <span class="method-start">76802 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.UploadTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">uploadSpeedTest</span>
+                <span class="method-start">100751 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -8,55 +8,99 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">LambdaTest Mobile Suite</th></tr>
-<tr><td><a href="#t0">Connection Test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">4,087</td><td></td><td></td></tr>
+<tr><th colspan="8">Surefire suite</th></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">123,418</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">LambdaTest Mobile Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Connection Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.raghavendra.lambdatest.tests.ConnectionTest</td><td><a href="#m0">setUp</a></td><td rowspan="1">1764798576606</td><td rowspan="1">4048</td></tr><tr><th colspan="4">Connection Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.raghavendra.lambdatest.tests.ConnectionTest</td><td><a href="#m1">tearDown</a></td><td rowspan="1">1764798580662</td><td rowspan="1">0</td></tr><tr><th colspan="4">Connection Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.raghavendra.lambdatest.tests.ConnectionTest</td><td><a href="#m2">verifyAppLaunchesOnLambdaTest</a></td><td rowspan="1">1764798580660</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.CombinedTest</td><td><a href="#m0">combinedSpeedTest</a></td><td rowspan="1">1764901961576</td><td rowspan="1">25167</td></tr><tr class="failedodd"><td rowspan="1">tests.DownloadTest</td><td><a href="#m1">downloadSpeedTest</a></td><td rowspan="1">1764902014916</td><td rowspan="1">23461</td></tr><tr class="failedeven"><td rowspan="1">tests.LatencyTest</td><td><a href="#m2">latencyCheck</a></td><td rowspan="1">1764902038378</td><td rowspan="1">23934</td></tr><tr class="failedodd"><td rowspan="1">tests.UploadTest</td><td><a href="#m3">uploadSpeedTest</a></td><td rowspan="1">1764902062327</td><td rowspan="1">22624</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.ConnectionTest</td><td><a href="#m4">testConnection</a></td><td rowspan="1">1764901986743</td><td rowspan="1">28172</td></tr></tbody>
 </table>
-<h2>Connection Test</h2><h3 id="m0">com.raghavendra.lambdatest.tests.ConnectionTest#setUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: ba74bbcdf1a2a294c59320fa65f3a66f: Oops! We are unable to process your test at the moment. Please try again after sometime. 
-Host info: host: &apos;RAGHAVENDRAIL&apos;, ip: &apos;192.168.0.11&apos;
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+<h2>Surefire test</h2><h3 id="m0">tests.CombinedTest#combinedSpeedTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {desiredCapabilities=Capabilities {app: lt://APP1016060671764797351..., build: LambdaTest Mobile Assignment, deviceName: Galaxy S11, isRealMobile: true, name: SpeedTest Connection Test, platformName: ANDROID, platformVersion: 12}, capabilities=[{appium:name=SpeedTest Connection Test, appium:isRealMobile=true, appium:platformVersion=12, appium:app=lt://APP1016060671764797351937344, appium:deviceName=Galaxy S11, platformName=ANDROID, appium:build=LambdaTest Mobile Assignment}]}]
-Capabilities {app: lt://APP1016060671764797351..., build: LambdaTest Mobile Assignment, deviceName: Galaxy S11, isRealMobile: true, name: SpeedTest Connection Test, platformName: ANDROID, platformVersion: 12}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+Command: [8d73e0a1-8b64-408a-9db3-345c5cfee26d, findElement {using=id, value=com.lambdatest.proverbial:id/browser}]
+Capabilities {appium:adbExecTimeout: 120000, appium:appActivity: com.example.QAapp.SplashScr..., appium:appPackage: com.example.QAapp, appium:autoAcceptAlerts: true, appium:automationName: uiautomator2, appium:chromeOptions: {args: []}, appium:chromedriverExecutableDir: /appium/assets/drivers/chro..., appium:chromedriverPorts: [[11001, 11049]], appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 120000, appActivity: com.example.QAapp.SplashScr..., appPackage: com.example.QAapp, autoAcceptAlerts: true, automationName: uiautomator2, chromeOptions: {args: []}, chromedriverExecutableDir: /appium/assets/drivers/chro..., chromedriverPorts: [[11001, 11049]], deviceName: Pixel 7, enableWebviewDetailsCollection: false, ensureWebviewsHavePages: false, headless: false, mode: cloud, nativeWebScreenshot: true, newCommandTimeout: 0, orientation: PORTRAIT, platformName: android, platformVersion: 13, systemPort: 12109, udid: 2A101FDH200FGD, uiautomator2ServerLaunchTimeout: 60000, waitForQuiescence: false}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 7, appium:deviceName: 2A101FDH200FGD, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 2A101FDH200FGD, appium:enableWebviewDetailsCollection: false, appium:ensureWebviewsHavePages: false, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 0, appium:orientation: PORTRAIT, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 136, appium:systemPort: 12109, appium:takesScreenshot: true, appium:udid: 2A101FDH200FGD, appium:uiautomator2ServerLaunchTimeout: 60000, appium:viewportRect: {height: 2002, left: 0, top: 136, width: 1080}, appium:waitForQuiescence: false, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 8d73e0a1-8b64-408a-9db3-345c5cfee26d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
-	at com.raghavendra.lambdatest.base.DriverFactory.initDriver(DriverFactory.java:35)
-	at com.raghavendra.lambdatest.tests.BaseTest.setUp(BaseTest.java:12)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at pages.SpeedTestPage.openBrowser(SpeedTestPage.java:27)
+	at tests.CombinedTest.combinedSpeedTest(CombinedTest.java:16)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.raghavendra.lambdatest.tests.ConnectionTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.raghavendra.lambdatest.tests.ConnectionTest#verifyAppLaunchesOnLambdaTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: ba74bbcdf1a2a294c59320fa65f3a66f: Oops! We are unable to process your test at the moment. Please try again after sometime. 
-Host info: host: &apos;RAGHAVENDRAIL&apos;, ip: &apos;192.168.0.11&apos;
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.DownloadTest#downloadSpeedTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {desiredCapabilities=Capabilities {app: lt://APP1016060671764797351..., build: LambdaTest Mobile Assignment, deviceName: Galaxy S11, isRealMobile: true, name: SpeedTest Connection Test, platformName: ANDROID, platformVersion: 12}, capabilities=[{appium:name=SpeedTest Connection Test, appium:isRealMobile=true, appium:platformVersion=12, appium:app=lt://APP1016060671764797351937344, appium:deviceName=Galaxy S11, platformName=ANDROID, appium:build=LambdaTest Mobile Assignment}]}]
-Capabilities {app: lt://APP1016060671764797351..., build: LambdaTest Mobile Assignment, deviceName: Galaxy S11, isRealMobile: true, name: SpeedTest Connection Test, platformName: ANDROID, platformVersion: 12}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+Command: [d61ec12f-4844-4042-b95a-3670fe273c0f, findElement {using=id, value=com.lambdatest.proverbial:id/browser}]
+Capabilities {appium:adbExecTimeout: 120000, appium:appActivity: com.example.QAapp.SplashScr..., appium:appPackage: com.example.QAapp, appium:autoAcceptAlerts: true, appium:automationName: uiautomator2, appium:chromeOptions: {args: []}, appium:chromedriverExecutableDir: /appium/assets/drivers/chro..., appium:chromedriverPorts: [[11001, 11049]], appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 120000, appActivity: com.example.QAapp.SplashScr..., appPackage: com.example.QAapp, autoAcceptAlerts: true, automationName: uiautomator2, chromeOptions: {args: []}, chromedriverExecutableDir: /appium/assets/drivers/chro..., chromedriverPorts: [[11001, 11049]], deviceName: Pixel 7, enableWebviewDetailsCollection: false, ensureWebviewsHavePages: false, headless: false, mode: cloud, nativeWebScreenshot: true, newCommandTimeout: 0, orientation: PORTRAIT, platformName: android, platformVersion: 13, systemPort: 12391, udid: 35091FDH2007FA, uiautomator2ServerLaunchTimeout: 60000, waitForQuiescence: false}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 7, appium:deviceName: 35091FDH2007FA, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 35091FDH2007FA, appium:enableWebviewDetailsCollection: false, appium:ensureWebviewsHavePages: false, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 0, appium:orientation: PORTRAIT, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 136, appium:systemPort: 12391, appium:takesScreenshot: true, appium:udid: 35091FDH2007FA, appium:uiautomator2ServerLaunchTimeout: 60000, appium:viewportRect: {height: 2002, left: 0, top: 136, width: 1080}, appium:waitForQuiescence: false, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: d61ec12f-4844-4042-b95a-3670fe273c0f
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
-	at com.raghavendra.lambdatest.base.DriverFactory.initDriver(DriverFactory.java:35)
-	at com.raghavendra.lambdatest.tests.BaseTest.setUp(BaseTest.java:12)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at pages.SpeedTestPage.openBrowser(SpeedTestPage.java:27)
+	at tests.DownloadTest.downloadSpeedTest(DownloadTest.java:16)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.LatencyTest#latencyCheck</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [e3602eb3-7881-4d81-b890-130aeb37ead4, findElement {using=id, value=com.lambdatest.proverbial:id/browser}]
+Capabilities {appium:adbExecTimeout: 120000, appium:appActivity: com.example.QAapp.SplashScr..., appium:appPackage: com.example.QAapp, appium:autoAcceptAlerts: true, appium:automationName: uiautomator2, appium:chromeOptions: {args: []}, appium:chromedriverExecutableDir: /appium/assets/drivers/chro..., appium:chromedriverPorts: [[11001, 11049]], appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 120000, appActivity: com.example.QAapp.SplashScr..., appPackage: com.example.QAapp, autoAcceptAlerts: true, automationName: uiautomator2, chromeOptions: {args: []}, chromedriverExecutableDir: /appium/assets/drivers/chro..., chromedriverPorts: [[11001, 11049]], deviceName: Pixel 7, enableWebviewDetailsCollection: false, ensureWebviewsHavePages: false, headless: false, mode: cloud, nativeWebScreenshot: true, newCommandTimeout: 0, orientation: PORTRAIT, platformName: android, platformVersion: 13, systemPort: 12106, udid: 29201FDH2002EF, uiautomator2ServerLaunchTimeout: 60000, waitForQuiescence: false}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 7, appium:deviceName: 29201FDH2002EF, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 29201FDH2002EF, appium:enableWebviewDetailsCollection: false, appium:ensureWebviewsHavePages: false, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 0, appium:orientation: PORTRAIT, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 136, appium:systemPort: 12106, appium:takesScreenshot: true, appium:udid: 29201FDH2002EF, appium:uiautomator2ServerLaunchTimeout: 60000, appium:viewportRect: {height: 2002, left: 0, top: 136, width: 1080}, appium:waitForQuiescence: false, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e3602eb3-7881-4d81-b890-130aeb37ead4
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at pages.SpeedTestPage.openBrowser(SpeedTestPage.java:27)
+	at tests.LatencyTest.latencyCheck(LatencyTest.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.UploadTest#uploadSpeedTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fd5bea9-0e2c-46e9-8c60-1fb0750371ad, findElement {using=id, value=com.lambdatest.proverbial:id/browser}]
+Capabilities {appium:adbExecTimeout: 120000, appium:appActivity: com.example.QAapp.SplashScr..., appium:appPackage: com.example.QAapp, appium:autoAcceptAlerts: true, appium:automationName: uiautomator2, appium:chromeOptions: {args: []}, appium:chromedriverExecutableDir: /appium/assets/drivers/chro..., appium:chromedriverPorts: [[11001, 11049]], appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 120000, appActivity: com.example.QAapp.SplashScr..., appPackage: com.example.QAapp, autoAcceptAlerts: true, automationName: uiautomator2, chromeOptions: {args: []}, chromedriverExecutableDir: /appium/assets/drivers/chro..., chromedriverPorts: [[11001, 11049]], deviceName: Pixel 7, enableWebviewDetailsCollection: false, ensureWebviewsHavePages: false, headless: false, mode: cloud, nativeWebScreenshot: true, newCommandTimeout: 0, orientation: PORTRAIT, platformName: android, platformVersion: 13, systemPort: 12151, udid: 35091FDH2002GS, uiautomator2ServerLaunchTimeout: 60000, waitForQuiescence: false}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 7, appium:deviceName: 35091FDH2002GS, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 35091FDH2002GS, appium:enableWebviewDetailsCollection: false, appium:ensureWebviewsHavePages: false, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 0, appium:orientation: PORTRAIT, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 136, appium:systemPort: 12151, appium:takesScreenshot: true, appium:udid: 35091FDH2002GS, appium:uiautomator2ServerLaunchTimeout: 60000, appium:viewportRect: {height: 2002, left: 0, top: 136, width: 1080}, appium:waitForQuiescence: false, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 2fd5bea9-0e2c-46e9-8c60-1fb0750371ad
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at pages.SpeedTestPage.openBrowser(SpeedTestPage.java:27)
+	at tests.UploadTest.uploadSpeedTest(UploadTest.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.ConnectionTest#testConnection</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

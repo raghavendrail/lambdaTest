@@ -1,32 +1,28 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="LambdaTest Mobile Speed Tests" parallel="tests" thread-count="2">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SpeedTestSuite" parallel="tests" thread-count="2">
 
-	<listeners>
-		<listener class-name="com.raghavendra.lambdatest.listeners.TestListener"/>
-	</listeners>
+    <test name="Download">
+        <classes>
+            <class name="tests.DownloadTest"/>
+        </classes>
+    </test>
 
-	<test name="DOWNLOAD Test">
-		<classes>
-			<class name="com.raghavendra.lambdatest.tests.DownloadTest"/>
-		</classes>
-	</test>
+    <test name="Upload">
+        <classes>
+            <class name="tests.UploadTest"/>
+        </classes>
+    </test>
 
-	<test name="UPLOAD Test">
-		<classes>
-			<class name="com.raghavendra.lambdatest.tests.UploadTest"/>
-		</classes>
-	</test>
+    <test name="Combined">
+        <classes>
+            <class name="tests.CombinedTest"/>
+        </classes>
+    </test>
 
-	<test name="COMBINED Test">
-		<classes>
-			<class name="com.raghavendra.lambdatest.tests.CombinedTest"/>
-		</classes>
-	</test>
-
-	<test name="LATENCY Test">
-		<classes>
-			<class name="com.raghavendra.lambdatest.tests.LatencyTest"/>
-		</classes>
-	</test>
+    <test name="Latency">
+        <classes>
+            <class name="tests.LatencyTest"/>
+        </classes>
+    </test>
 
 </suite>

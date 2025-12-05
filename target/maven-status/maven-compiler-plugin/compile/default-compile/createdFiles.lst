@@ -1,2 +1,5 @@
-com\raghavendra\lambdatest\base\DriverFactory.class
-com\raghavendra\lambdatest\base\SpeedTestPage.class
+com\lambdatest\assignment\LambdaTest\App.class
+com\lambdatest\assignment\LambdaTest\config\Config.class
+pages\SpeedTestPage.class
+pages\BrowserPage.class
+base\BaseDriver.class
